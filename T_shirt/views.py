@@ -22,6 +22,5 @@ def predict(request):
 		accuracy=accuracy_score(Y_test,y_pred)*100
 		print("--------------->",data,accuracy)
 		data=str(data)
-		data=data[2]
 		return render(request,'T_shirt/result.html',{"data":data,"accuracy":accuracy})
 	return render(request,'T_shirt/index.html')

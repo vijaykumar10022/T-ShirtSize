@@ -14,16 +14,16 @@
 </head>
 <body >
 	<div class="container">
-	<h5><b>Get Your T_Shirt Size(Males Only)</b></h5>
+	<h5><b>Get Your T_Shirt Size(Gents Only)</b></h5>
 	<form action="{% url 'predict' %}" method="POST">
 		{% csrf_token %}
 		<div class="form-group">
-	      <label for="uname"><b>Height</b></label>
-	      <p><input type="text" class="form-control" id="name" placeholder="Enter Your Height" name="height" required></p>
+	      <label for="uname"><b>Height[C.M]</b></label>
+	      <p><input type="text" class="form-control" id="name" placeholder="Enter Your Height in c.m" name="height" required></p>
     	</div>
     	<div class="form-group">
-	      <label for="uname"><b>Weight</b></label>
-	      <p><input type="text" class="form-control" id="name" placeholder="Enter Your weight" name="weight" required></p>
+	      <label for="uname"><b>Weight[K.G]</b></label>
+	      <p><input type="text" class="form-control" id="name" placeholder="Enter Your weight kgs" name="weight" required></p>
     	</div>
 		<button type="submit" class="btn btn-primary">Submit</button>
 	</form>
